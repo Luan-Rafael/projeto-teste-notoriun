@@ -55,9 +55,7 @@ POSTGRES_DB=database
 ```
 
 4. **Criar o email com Ethereal no link abaixo:**
-```
 [https://ethereal.email/create](https://ethereal.email/create)
-```
 
 5.  **Criar arquivo .env na pasta /apps/backend/ e usar o email criado com o Ethereal**
 ```

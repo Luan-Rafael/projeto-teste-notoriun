@@ -47,7 +47,7 @@ Essa estrutura facilita a manutenção, escalabilidade e reutilização de códi
 npm install
 ```
 
-3. **Criar arquivo .env para o banco de dados**
+3. **Criar arquivo .env (na raiz do projeto) para o banco de dados**
 ```
 POSTGRES_USER=user
 POSTGRES_PASSWORD=password

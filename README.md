@@ -54,7 +54,12 @@ POSTGRES_PASSWORD=password
 POSTGRES_DB=database
 ```
 
-4.  **Criar arquivo .env na pasta /apps/backend/**
+4. **Criar o email com Ethereal no link abaixo:**
+```
+https://ethereal.email/create
+```
+
+5.  **Criar arquivo .env na pasta /apps/backend/ e usar o email criado com o Ethereal**
 ```
 EMAIL_USER=
 EMAIL_PASSWORD=
@@ -65,14 +70,35 @@ DB_USERNAME=user
 DB_PASSWORD=password
 DB_NAME=dbname
 ```
+6. **Subir Banco de Dados com Docker**
+   ### **Para usuários do Windows com WSL (Subsistema do Windows para Linux)**
+   1. Abra o WSL no terminal com o comando:
+      ```bash
+      wsl
+      ```
+   
+   2. Navegue até o diretório onde o arquivo `docker-compose.yml` está localizado:
+      ```bash
+      cd /caminho/do/seu/projeto
+      ```
+   
+   3. Execute o comando para iniciar os serviços:
+      ```bash
+      docker-compose up
+      ```
 
+   ### **Para usuários de Linux/macOS**
+   1. Navegue até o diretório onde o arquivo `docker-compose.yml` está localizado:
+      ```bash
+      cd /caminho/do/seu/projeto
+      ```
+   
+   2. Execute o comando para iniciar os serviços:
+      ```bash
+      docker-compose up
+      ```
 
-5. **Subir o banco de dados (Docker)**
-```bash
-docker-compose up
-```
-
-6. **Inicie o backend e frontend**
+7. **Abra um novo terminal para executar os projetos**
 ```bash
 npm run dev
 ```

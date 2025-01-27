@@ -43,17 +43,37 @@ Essa estrutura facilita a manutenção, escalabilidade e reutilização de códi
     ```
 
 2. **Instale as dependências**
-```
+```bash
 npm install
 ```
 
-4. **Subir o banco de dados (Docker)**
+3. **Criar arquivo .env para o banco de dados**
 ```
+POSTGRES_USER=user
+POSTGRES_PASSWORD=password
+POSTGRES_DB=database
+```
+
+4.  **Criar arquivo .env na pasta /apps/backend/**
+```
+EMAIL_USER=
+EMAIL_PASSWORD=
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=user
+DB_PASSWORD=password
+DB_NAME=dbname
+```
+
+
+5. **Subir o banco de dados (Docker)**
+```bash
 docker-compose up
 ```
 
-3. **Inicie o backend e frontend**
-```
+6. **Inicie o backend e frontend**
+```bash
 npm run dev
 ```
 
